@@ -1,0 +1,21 @@
+{
+  "name": "Solisst",
+  "short_name": "Solisst",
+  "description": "Solisst — landing page hiện đại, tốc độ cao, chuẩn SEO.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0F19",
+  "theme_color": "#0B0F19",
+  "icons": [
+    {
+      "src": "/icons/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
