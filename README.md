@@ -104,3 +104,16 @@ npm start
 - Dùng alias `@/*` → `src/*` (VD: `@/components/ui/Button`).
 - Style bằng Tailwind, nối class bằng `cn()` từ `@/lib/utils`.
 - Section nào cũng bọc bằng `<Container>` để giữ padding/độ rộng nhất quán.
+
+## Vận hành landing bán hàng
+
+| Việc | Ở đâu |
+| --- | --- |
+| Sửa sản phẩm, giá, màu, size, combo | `src/lib/products.js` |
+| Sửa liên hệ, nav, cam kết | `src/lib/site.js` |
+| Đơn hàng → Google Sheet + Gmail | `docs/google-apps-script.gs` (hướng dẫn trong file) → điền `GOOGLE_SCRIPT_URL`, `GOOGLE_SCRIPT_SECRET` |
+| Facebook / TikTok Pixel | Điền `NEXT_PUBLIC_FB_PIXEL_ID`, `NEXT_PUBLIC_TIKTOK_PIXEL_ID` trong `.env.local` |
+| Đánh giá khách hàng (đang là nội dung mẫu) | `src/components/sections/Reviews.js` |
+
+Sự kiện pixel tự bắn: `ViewContent`, `AddToCart`, `InitiateCheckout`, `Purchase` (TikTok: `PlaceAnOrder`).
+Đồng hồ flash sale tự đếm về 23:59:59 mỗi ngày (`src/lib/countdown.js`).

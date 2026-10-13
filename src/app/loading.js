@@ -1,13 +1,13 @@
-import Container from "@/components/ui/Container";
-
 export default function Loading() {
   return (
-    <main className="bg-white">
-      <Container>
-        <div className="flex min-h-[40vh] items-center justify-center py-20">
-          <div className="h-10 w-10 animate-spin rounded-full border-2 border-slate-200 border-t-slate-900" />
+    <main className="bg-paper-texture">
+      <div className="flex min-h-[60vh] flex-col items-center justify-center gap-5 py-20">
+        <p className="font-serif text-4xl text-plum italic">Solisst</p>
+        <div className="h-px w-32 overflow-hidden bg-plum/15">
+          <div className="h-full w-1/3 animate-[loading_1.2s_ease-in-out_infinite] bg-plum" />
         </div>
-      </Container>
+        <style>{`@keyframes loading{0%{transform:translateX(-100%)}100%{transform:translateX(300%)}}`}</style>
+      </div>
     </main>
   );
 }

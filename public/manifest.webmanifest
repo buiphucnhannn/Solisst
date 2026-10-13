@@ -1,21 +1,21 @@
 {
   "name": "Solisst",
   "short_name": "Solisst",
-  "description": "Solisst — landing page hiện đại, tốc độ cao, chuẩn SEO.",
+  "description": "Solisst — đầm dạ hội & đồ mặc nhà tôn dáng.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0B0F19",
-  "theme_color": "#0B0F19",
+  "background_color": "#2a1e1b",
+  "theme_color": "#7b1e2e",
   "icons": [
     {
-      "src": "/icons/apple-touch-icon.svg",
+      "src": "/icons/apple-touch-icon.png",
       "sizes": "180x180",
-      "type": "image/svg+xml"
+      "type": "image/png"
     },
     {
-      "src": "/favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ]
 }
