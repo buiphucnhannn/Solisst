@@ -75,7 +75,7 @@ export default function CollectionHero({ count }) {
               shadow={false}
               className="absolute right-[4%] bottom-0 h-[84%]"
             />
-            <ScriptNote data-reveal="fade" data-reveal-delay="800" lines={["New", "Season"]} className="absolute top-2 right-0 hidden -rotate-12 text-5xl lg:block" />
+            <ScriptNote data-reveal="fade" data-reveal-delay="800" lines={["New", "Season"]} className="absolute top-0 -right-3 z-20 hidden -rotate-12 text-[2.2rem] lg:block 2xl:top-0 2xl:-right-16 2xl:text-5xl" />
           </div>
         </div>
       </Container>
